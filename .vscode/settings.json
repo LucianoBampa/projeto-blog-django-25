@@ -14,18 +14,17 @@
   "code-runner.ignoreSelection": true,
   "editor.fontFamily": "Consolas, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono'",
   "terminal.integrated.fontFamily": "",
-
+  "editor.fontLigatures": false,
   "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8",
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.formatOnSave": true
-  },
-
-  "editor.codeActionsOnSave": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.fixAll.unusedImports": "explicit",
     "source.organizeImports": "explicit"
+    }
   },
 
   "python.languageServer": "Pylance",
@@ -33,8 +32,11 @@
   "python.formatting.autopep8Args": [
     "--indent-size=4",
     "--max-line-length=80"
+    // "--ignore=E111"
   ],
-  "python.linting.flake8Args": [],
+  "python.linting.flake8Args": [
+    // "--ignore=E111",
+  ],
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "python.testing.unittestEnabled": false,
@@ -47,22 +49,22 @@
     "reportUnknownLambdaType": "none",
     "reportUnknownParameterType": "none"
   },
-
+  "python.defaultInterpreterPath": "./venv/bin/python",
   "python.analysis.typeCheckingMode": "basic",
 
   "cSpell.enabled": true,
 
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "args": [
-        "-NoExit",
-        "-Command",
-        "cd 'C:\\Users\\lucia\\Desktop\\Projeto-Agenda-Django-25'; .\\venv\\Scripts\\Activate"
-      ]
-    }
-  },
+  // "terminal.integrated.profiles.windows": {
+  //   "PowerShell": {
+  //     "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  //     "args": [
+  //       "-NoExit",
+  //       "-Command",
+  //       "cd 'C:\\Users\\lucia\\Desktop\\Projeto-Blog-Django-25'; .\\venv\\Scripts\\Activate"
+  //     ]
+  //   }
+  // },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-
+  
   "files.encoding": "utf8"
 }
