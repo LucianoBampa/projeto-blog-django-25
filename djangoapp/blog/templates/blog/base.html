@@ -3,9 +3,7 @@
 <head>
     {% include "blog/partials/_head.html" %}
 </head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-    <h1>Exemplo: {{ site_setup.title }}</h1>
+<body class="dark-theme">
     {% include "blog/partials/_header.html" %}
 
     {% block content %}{% endblock content %}
@@ -13,6 +11,8 @@
     {% include "blog/partials/_pagination.html" %}
     
     {% include "blog/partials/_footer.html" %}
+
+    {% include "blog/partials/_temp.html" %}
 
 </body>
 </html>
