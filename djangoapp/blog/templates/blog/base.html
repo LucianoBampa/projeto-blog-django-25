@@ -3,16 +3,17 @@
 <head>
     {% include "blog/partials/_head.html" %}
 </head>
-<body class="dark-theme">
-    {% include "blog/partials/_header.html" %}
+<body>
+    <div class="blog-wrapper">
+        {% include "blog/partials/_header.html" %}
 
-    {% block content %}{% endblock content %}
-    
-    {% include "blog/partials/_pagination.html" %}
-    
-    {% include "blog/partials/_footer.html" %}
+        {% block content %}{% endblock content %}
 
-    {% include "blog/partials/_temp.html" %}
+        {% include "blog/partials/_pagination.html" %}
+        
+        {% include "blog/partials/_footer.html" %}
+        
+    </div>
 
 </body>
 </html>
