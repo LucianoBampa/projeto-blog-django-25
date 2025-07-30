@@ -21,7 +21,7 @@
                 name="search"
                 id="search-input"
                 placeholder="Search"
-                value="">
+                value="Incira sua pesquisa">
               <button class="search-btn" type="submit" aria-labelledby="search-label">
                 <i class="fa fa-search"></i>
               </button>
@@ -33,7 +33,7 @@
       {% if site_setup.show_menu %}
         <nav class="menu">
           <ul class="menu-items">          
-            {% for link in site_setup.menulink_set.all %}
+            {% for link in site_setup.menu.all %}
               <li class="menu-item">
                 {% if link.new_tab %}
                   <a target="_blank" class="menu-link" href="{{ link.url_or_path }}">
